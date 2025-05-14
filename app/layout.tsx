@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { NavBar } from "@/components";
 
 export const metadata: Metadata = {
   title: "Andrew Dev",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
