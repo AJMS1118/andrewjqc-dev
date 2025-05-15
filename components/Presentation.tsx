@@ -1,5 +1,10 @@
 import React from "react";
+import { HireButton } from "./HireButton";
 
 export const Presentation = () => {
-  return <div>Presentation</div>;
+  return (
+    <div>
+      <HireButton />
+    </div>
+  );
 };
